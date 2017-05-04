@@ -1,0 +1,49 @@
+<div banner-dir class="first-banner">
+    <div class="loginbtn">
+    <button type="button" class="btn btn-primary" ng-click="lctrl.show()">CLICK HERE TO LOGIN</button>
+    </div>
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h4 class="modal-title" id="myModalLabel">LOGIN</h4>
+            </div>
+            <div id="chat">
+                <div class="modal-body">
+                    <form class="form-horizontal ng-valid-email ng-dirty ng-submitted ng-invalid ng-invalid-required"  novalidate name="loginForm" data-ng-submit="loginForm.$valid && cctrl.submitlogin(cctrl.loginDetails)">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Email Address</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" name="input_email" placeholder="example@domain.com" data-ng-model="lctrl.loginDetails.email" required>
+                                <div ng-messages="loginForm.input_email.$error" class="error" ng-if="loginForm.input_email.$dirty">
+                                    <p ng-message="required">Please enter Email</p>
+                                    <p ng-message="email">Email is not valid</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Password</label>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" name="input_password" placeholder="password" data-ng-model="lctrl.loginDetails.password" required>
+                                <div ng-messages="loginForm.input_password.$error" class="error" ng-if="loginForm.input_password.$dirty">
+                                    <p ng-message="required">Please enter Password</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p class="col-sm-9"><a href="../ForgotPassword/">Forgot your password?</a></p>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button type="submit" class="btn btn-primary ng-isolate-scope" data-ga-tracker="{category: 'login', action: 'submit', label: cctrl.loginDetails.subject}">LOGIN</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>

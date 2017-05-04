@@ -1,0 +1,327 @@
+/* Styles go here */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'open sans', 'sans-serif';
+    padding-top: 70px;
+}
+h1{
+    color:#ff9934;
+    text-align: center;
+    font-weight: 900;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.navbar{
+    margin: 0;
+    padding: 10px 15px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+
+}
+
+.navbar-inverse i{
+    font-size: 3em;
+    color: #fb860a;
+}
+.cbp-af-header-shrink{
+    padding-top:5px;
+    padding-bottom: 5px;
+    opacity:0.8;
+}
+.navbar-inverse .navbar-nav > li > a{
+    color: #fb860a;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 900;
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+    color: #ff9934 ;
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -moz-transition: transform 1s ease-out;
+    -webkit-transition: transform 1s ease-out;
+    transition: transform 1s ease-out;
+}
+.navbar-inverse .navbar-nav > li > a:focus{
+    color:white;
+}
+
+.modal-content{
+    margin-top: 200px;
+}
+.modal-title{
+    text-align: center;
+    font-weight: 900;
+
+}
+
+input{
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    border: 2px solid #117c67;
+
+}
+.text-center{
+    font-size: 1em;
+    padding-top: 15px;
+}
+#btnLogin{
+    position: relative;
+    background: #16a085;
+    color: #fff;
+    padding: 15px 50px;
+    margin-top: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 6px #117c67;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#btnLogin:hover{
+    box-shadow: 0 4px #117c67;
+    top: 2px;
+}
+
+.first-banner{
+    background-image: url(../Img/firstbanner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+}
+.heading{
+    width: 200px;
+    height: 100px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5em;
+    color: white;
+    position:relative;
+    text-align:center;
+    padding: 10px;
+    border-radius: 50%;
+    background: rgb(0, 0, 70);/* fallback for old browsers */
+    background: -webkit-linear-gradient(#000046, #1cb5e0); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(#000046, #1cb5e0);
+
+    margin:10px auto;
+}
+.first-banner .main{
+    background-color: rgba(61,69,81,0.5);
+    height: 300px;
+    position:relative;
+    top:50px;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    100% {
+        -moz-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+.left {
+    /* This section calls the slideInFromLeft animation we defined above */
+    color: #fb860a;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.3em;
+    animation: 13s ease-out 0s 1 slideInFromRight;
+    font-weight: 900;
+    padding: 50px 50px 50px 20px;
+    text-align: center;
+
+
+}
+
+.left .fa{
+    color: white;
+}
+
+.right .fa{
+    color: white;
+}
+.right{
+    color: #fb860a;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.3em;
+    animation: 16s ease-out 3s 1 slideInFromRight;
+    font-weight: 900;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.second-banner:before{
+    content:"";
+    display: block;
+    height: 50px;
+    background: #ff9934;
+    position: relative;
+    top:0;
+    left:0;
+    right:0;
+}
+
+.second-banner h4{
+    text-align: center;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    border: 5px solid #ff9934;
+    margin: 30px auto;
+
+}
+.second-banner .title{
+    text-align: center;
+    padding: 80px 10px;
+    color: black;
+    font-size: 1em;
+    font-weight: 900;
+
+}
+.third-banner:before{
+    content:"";
+    display: block;
+    height: 50px;
+    background: #ff9934;
+    position: relative;
+    top:0;
+    left:0;
+    right:0;
+}
+.third-banner{
+    background: #030E28; /* fallback for old browsers */
+    background: -webkit-linear-gradient(rgba(3,14,40,0.27), #030E28); /* Chrome 10-25, Safari 5.1-6 */
+    background: radial-gradient(rgba(3,14,40,0.27), #030E28);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+
+.third-banner .fa{
+    font-size: 2em;
+    color: white;
+    width: 300px;
+    height: 150px;
+    display: block;
+    text-align: center;
+    border-radius:5%;
+    border: 5px solid transparent;
+    margin: 5px auto;
+    background: rgba(3,14,40,0.27); /* fallback for old browsers */
+    background: -webkit-linear-gradient(rgba(3,14,40,0.27), #030E28); /* Chrome 10-25, Safari 5.1-6 */
+    background-image: radial-gradient(rgba(3,14,40,0.27), #030E28);
+}
+
+.third-banner h5,p{
+    text-align: center;
+    padding: 0 10px;
+    color:white;
+    font-size: 0.6em;
+}
+.third-banner p{
+    color:#ff9934 ;
+}
+
+@media (min-width: 768px){
+    .left
+    {
+        font-size: 2em;
+    }
+    .right
+    {
+        font-size: 2em;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+}
+.social{
+    text-align: center;
+}
+.social .fa{
+    font-size: 2em;
+    color: black;
+    padding: 10px 15px 10px;
+}
+footer p{
+    color: black;
+    font-size: 0.8em;
+}
+
+
+#contact .first-banner{
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(rgba(61,69,81,0.5),rgba(61,69,81,0.5)),url(../Img/firstbanner.jpg);
+
+}
+#contact .first-banner .main{
+background-color: transparent;
+}
+#contact h1,h3{
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+}
+#contact .details{
+    padding:50px 50px 150px 50px;;
+}
+#contact .details .col-sm-4{
+    border-left: 2px solid #ff9934;
+}
+#contact .details .col-sm-4:first-child{
+    border-left-color: transparent;
+}
+#contact .details p {
+    color: black;
+    font-size: 1.5em;
+}
+#contact .third-banner:before {
+height: 0;
+}
+#contact .third-banner .contact-form h2{
+    font-size: 2.5em;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+#contact .third-banner .contact-form{
+    color:white;
+}
+#contact .third-banner p{
+    font-size: 1em;
+    padding-top: 5px;
+    color: #d9ff0a;;
+}
+#login p{
+    font-size: 1em;
+    padding-top: 5px;
+    color: #d9ff0a;;
+}
+.loginbtn .btn-primary{
+    width: 200px;
+    height: 60px;
+    top: 50%;
+    position: absolute;
+    margin-left: -100px;
+    left: 50%;
+}

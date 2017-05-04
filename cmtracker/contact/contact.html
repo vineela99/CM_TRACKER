@@ -1,0 +1,118 @@
+<div id="contact">
+<div class="container-fluid">
+    <div class="row">
+        <div class="first-banner">
+            <div class="main">
+                <h1>Hello <br>What can we help you with?</h1>
+                <h3>We're a friendly bunch of people
+                    and we love getting results.</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="details">
+            <div class="col-sm-4 col-xs-12">
+                <p>
+                    <strong>SALES</strong>
+                </p>
+                <p>
+                    123-456-789
+                </p>
+                <p>
+                    admin@uniteditinc.com
+                </p>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <p>
+                    <strong>STAFFING</strong>
+                </p>
+                <p>
+                    123-456-789
+                </p>
+                <p>
+                    hr@uniteditinc.com
+                </p>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <p>
+                    <strong>CAREERS</strong>
+                </p>
+                <p>
+                    123-456-789
+                </p>
+                <p>
+                    careers@uniteditinc.com
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="third-banner">
+            <div class="contact-form" id="contact-form">
+                <div class="container">
+                    <h2 class="text-center">Contact Us</h2>
+                    <form class="form-horizontal ng-valid-email ng-dirty ng-submitted ng-invalid ng-invalid-required"  novalidate name="contactForm" data-ng-submit="contactForm.$valid && cctrl.submitContact(cctrl.contactDetails)">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Your Name</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="input_name" placeholder="Your Full Name" data-ng-model="cctrl.contactDetails.name" required data-ng-minlength="2" data-ng-maxlength="5">
+                                <div ng-messages="contactForm.input_name.$error" class="error" ng-if="contactForm.input_name.$dirty">
+                                    <p ng-message="required">Please enter UserName</p>
+                                    <p ng-message="minlength">UserName must be more than 1 char</p>
+                                    <p ng-message="maxlength">USerName must be less than 6 char</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Email Address</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" name="input_email" placeholder="example@domain.com" data-ng-model="cctrl.contactDetails.email" required>
+                                <div ng-messages="contactForm.input_email.$error" class="error" ng-if="contactForm.input_email.$dirty">
+                                    <p ng-message="required">Please enter Email</p>
+                                    <p ng-message="email">Email is not valid</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Contact Number</label>
+                            <div class="col-sm-9">
+                                <input type="tel" class="form-control" name="input_contact" placeholder="Your Contact Number" data-ng-model="cctrl.contactDetails.contactNo" required ng-pattern="/^[0-9]{10}$/">
+                                <div ng-messages="contactForm.input_contact.$error" class="error" ng-if="contactForm.input_contact.$dirty">
+                                    <p ng-message="required">Please enter PhoneNumber</p>
+                                    <p pattern="required">Phone must be 10 char</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Subject</label>
+                            <div class="col-sm-9">
+                                <select class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" id="input_subject" required="" data-ng-model="cctrl.contactDetails.subject">
+                                    <option value="">Select Subject</option>
+                                    <option value="Schedule A Demo - HealthMate">Schedule A Demo - HealthMate</option>
+                                    <option value="Schedule A Demo - RetailBot">Schedule A Demo - RetailBot</option>
+                                    <option value="Sales &amp; Marketing">Sales &amp; Marketing</option>
+                                    <option value="Technical Support">Technical Support</option>
+                                    <option value="Talent Solutions">Talent Solutions</option>
+                                    <option value="Feedback">Feedback</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Message</label>
+                            <div class="col-sm-9">
+                                <textarea class="form-control ng-pristine ng-untouched ng-valid" rows="6" id="input_message" placeholder="Write your message here" data-ng-model="cctrl.contactDetails.message"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button type="submit" class="btn btn-primary ng-isolate-scope" data-ga-tracker="{category: 'contact', action: 'submit', label: cctrl.contactDetails.subject}">SUBMIT</button>
+                                <button type="reset" class="btn btn-default">RESET</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
